@@ -2,13 +2,13 @@ package Modifiers;
 
 public class Settings {
     private int maxSpeedOffsetNumeric;
-    private double maxSpeedOffsetPercentage
-    private int maxAcceleration;
-    private int maxSteerAngle;
-    private int maxSteerSpeed;
+    private double maxSpeedOffsetPercentage;
+    private final int maxAcceleration;
+    private final int maxSteerAngle;
+    private final int maxSteerSpeed;
     final private SpeedOffset speedOffsetSetting;
 
-    private static enum SpeedOffset {
+    private enum SpeedOffset {
         Numeric,
         Percentage
     }
